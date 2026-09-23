@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Registrar Administrativo";
+}
+
+<h1>Registrar Administrativo</h1>
+
+<form asp-action="RegistrarAdministrativo" method="post">
+
+    <div>
+        <label>ID Empleado</label>
+        <input type="text" name="IdEmpleado" />
+    </div>
+
+    <div>
+        <label>Nombre y Apellidos</label>
+        <input type="text" name="NomapeEmpleado" />
+    </div>
+
+    <div>
+        <label>Categoría</label>
+        <select name="CategoriaEmpleado">
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">Otros</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Número de Hijos</label>
+        <input type="number" name="NHijos" />
+    </div>
+
+    <div>
+        <label>Tipo de Contrato</label>
+        <select name="TipoContrato">
+            <option value="Indefinido">Indefinido</option>
+            <option value="Contratado">Contratado</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Año de Ingreso</label>
+        <input type="number" name="AñoIngreso" />
+    </div>
+
+    <div>
+        <label>Post Grado</label>
+        <select name="PostGrado">
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+        </select>
+    </div>
+
+    <br />
+
+    <button type="submit">REGISTRAR</button>
+
+</form>

@@ -1,0 +1,33 @@
+﻿@model List<POO1_T1_TODCO.Models.Empleado>
+
+@{
+    ViewData["Title"] = "Lista de Empleados";
+}
+
+<h1>Lista de Empleados</h1>
+
+<a asp-action="RegistrarEmpleado">REGISTRAR</a>
+
+<br />
+<br />
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Categoría</th>
+        <th>Hijos</th>
+        <th>Contrato</th>
+    </tr>
+
+    @foreach (var empleado in Model)
+    {
+        <tr>
+            <td>@empleado.IdEmpleado</td>
+            <td>@empleado.NomapeEmpleado</td>
+            <td>@empleado.CategoriaEmpleado</td>
+            <td>@empleado.NHijos</td>
+            <td>@empleado.TipoContrato</td>
+        </tr>
+    }
+</table>

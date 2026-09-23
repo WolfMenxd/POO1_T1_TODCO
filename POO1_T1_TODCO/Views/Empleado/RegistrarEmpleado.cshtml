@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Registrar Empleado";
+}
+
+<h1>Registrar Empleado</h1>
+
+<form asp-action="RegistrarEmpleado" method="post">
+
+    <div>
+        <label>ID Empleado</label>
+        <input type="text" name="IdEmpleado" />
+    </div>
+
+    <div>
+        <label>Nombre y Apellidos</label>
+        <input type="text" name="NomapeEmpleado" />
+    </div>
+
+    <div>
+        <label>Categoría</label>
+        <select name="CategoriaEmpleado">
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">Otros</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Número de Hijos</label>
+        <input type="number" name="NHijos" />
+    </div>
+
+    <div>
+        <label>Tipo de Contrato</label>
+        <select name="TipoContrato">
+            <option value="Indefinido">Indefinido</option>
+            <option value="Contratado">Contratado</option>
+        </select>
+    </div>
+
+    <br />
+
+    <button type="submit">REGISTRAR</button>
+
+</form>

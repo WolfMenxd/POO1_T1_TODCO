@@ -1,0 +1,67 @@
+﻿@model POO1_T1_TODCO.Models.Administrativo
+
+@{
+    ViewData["Title"] = "Resultado Administrativo";
+}
+
+<h1>Resultado del Administrativo</h1>
+
+<div>
+    <label>ID Empleado</label>
+    <input type="text" value="@Model.IdEmpleado" readonly />
+</div>
+
+<div>
+    <label>Nombre y Apellidos</label>
+    <input type="text" value="@Model.NomapeEmpleado" readonly />
+</div>
+
+<div>
+    <label>Categoría</label>
+    <input type="text" value="@Model.CategoriaEmpleado" readonly />
+</div>
+
+<div>
+    <label>Número de Hijos</label>
+    <input type="text" value="@Model.NHijos" readonly />
+</div>
+
+<div>
+    <label>Tipo de Contrato</label>
+    <input type="text" value="@Model.TipoContrato" readonly />
+</div>
+
+<div>
+    <label>Año de Ingreso</label>
+    <input type="text" value="@Model.AñoIngreso" readonly />
+</div>
+
+<div>
+    <label>Post Grado</label>
+    <input type="text" value="@Model.PostGrado" readonly />
+</div>
+
+<div>
+    <label>Sueldo Básico</label>
+    <input type="text" value="@ViewBag.SueldoBasico" readonly />
+</div>
+
+<div>
+    <label>Escolaridad</label>
+    <input type="text" value="@ViewBag.Escolaridad" readonly />
+</div>
+
+<div>
+    <label>Bonificación</label>
+    <input type="text" value="@ViewBag.Bonificacion" readonly />
+</div>
+
+<div>
+    <label>Incentivo</label>
+    <input type="text" value="@ViewBag.Incentivo" readonly />
+</div>
+
+<div>
+    <label>Monto a Pagar</label>
+    <input type="text" value="@ViewBag.MontoAPagar" readonly />
+</div>

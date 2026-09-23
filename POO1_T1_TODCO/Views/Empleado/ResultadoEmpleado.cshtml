@@ -1,0 +1,52 @@
+﻿@model POO1_T1_TODCO.Models.Empleado
+
+@{
+    ViewData["Title"] = "Resultado Empleado";
+}
+
+<h1>Resultado del Empleado</h1>
+
+<div>
+    <label>ID Empleado</label>
+    <input type="text" value="@Model.IdEmpleado" readonly />
+</div>
+
+<div>
+    <label>Nombre y Apellidos</label>
+    <input type="text" value="@Model.NomapeEmpleado" readonly />
+</div>
+
+<div>
+    <label>Categoría</label>
+    <input type="text" value="@Model.CategoriaEmpleado" readonly />
+</div>
+
+<div>
+    <label>Número de Hijos</label>
+    <input type="text" value="@Model.NHijos" readonly />
+</div>
+
+<div>
+    <label>Tipo de Contrato</label>
+    <input type="text" value="@Model.TipoContrato" readonly />
+</div>
+
+<div>
+    <label>Sueldo Básico</label>
+    <input type="text" value="@ViewBag.SueldoBasico" readonly />
+</div>
+
+<div>
+    <label>Escolaridad</label>
+    <input type="text" value="@ViewBag.Escolaridad" readonly />
+</div>
+
+<div>
+    <label>Bonificación</label>
+    <input type="text" value="@ViewBag.Bonificacion" readonly />
+</div>
+
+<div>
+    <label>Monto a Pagar</label>
+    <input type="text" value="@ViewBag.MontoAPagar" readonly />
+</div>
